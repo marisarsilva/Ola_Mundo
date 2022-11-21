@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+    <title>Landpage</title>
+</head>
+<body>
+    <header>
+       <div id="title">
+        <h1>Destino dos</h1>
+        <h1>Sonhos</h1>
+       </div>
+       
+       <ul>
+        <a href="#"><li>inicio</li></a>
+        <a href="#"><li>sobre</li></a>
+        <a href="#" id="inscreva-se-btn"><li>login</li></a>
+       </ul>
+    </header>
+    <main>
+        <aside>
+            <h2><span>Viagem</span></h2>
+            <h2>em volta do mundo</h2>
+            <p>
+                Quer viajar é não sabe pra onde?; Quer tirar umas ferias?; não perca tempo e se cadastre no nosso site de viagens, para achar ou pesquisar mais sobre o seu destino, e tenha uma boa viagem.
+            </p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="submit" href="/home.html" value="Enviar">
+            </form>
+        </aside>
+
+        <article>
+            <img src="a0be5481a63ae02da28ae1a9232bf119" alt="Stch">
+        </article>
+    </main>
+</body>
+</html>
+
+
+
+CSS
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    max-width: 1200px;
+    margin: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+ul{
+    margin: 100px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-size: 15px;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
